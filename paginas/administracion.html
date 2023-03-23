@@ -13,7 +13,49 @@
             <a href="../index.html">volver</a>
         </nav>
     </header>
-    <main></main>
+    <main>
+      <!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de Presupuesto Contable</title>
+</head>
+<body>
+	<h1>Formulario de Presupuesto Contable</h1>
+	<form>
+		<label for="horas">Número de horas de trabajo:</label>
+		<input type="number" id="horas" name="horas"><br>
+
+		<label for="tarifa">Tarifa por hora:</label>
+		<input type="number" id="tarifa" name="tarifa"><br>
+
+		<label for="gastos">Gastos adicionales:</label>
+		<input type="number" id="gastos" name="gastos"><br>
+
+		<label for="impuestos">Impuestos:</label>
+		<input type="number" id="impuestos" name="impuestos"><br>
+
+		<input type="button" value="Calcular Presupuesto" onclick="calcularPresupuesto()"><br>
+
+		<label for="total">Costo total del trabajo:</label>
+		<input type="number" id="total" name="total" readonly><br>
+	</form>
+
+	<script>
+		function calcularPresupuesto() {
+			var horas = document.getElementById("horas").value;
+			var tarifa = document.getElementById("tarifa").value;
+			var gastos = document.getElementById("gastos").value;
+			var impuestos = document.getElementById("impuestos").value;
+
+			var total = horas * tarifa + parseFloat(gastos) + parseFloat(impuestos);
+
+			document.getElementById("total").value = total.toFixed(2);
+		}
+	</script>
+</body>
+</html>
+
+    </main>
     <footer>
         <div>
           <div class="row">
