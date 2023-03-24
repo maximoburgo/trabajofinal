@@ -49,14 +49,14 @@ body{
     padding: 0;
 }    
 
-.container{
+.contenedor{
     width: 100%;
     display:flex;
     max-width: 1100px;
     margin: auto;
 }
 
-.card{
+.tarjeta{
     width: 100%;
     margin: 20px;
     border-radius: 6px;
@@ -67,29 +67,29 @@ body{
     transition: all 400ms ease;
     
 }
-.card:hover{
+.tarjeta:hover{
     box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
     transform: translateY(-3%);
 }
 
-.card img{
+.tarjeta img{
     width: 100%;
     height: 210px;
 }
 
-.card .contenido{
+.tarjeta .contenido{
     padding: 15px;
     text-align: center;
 }
-.card .contenido p{
+.tarjeta .contenido p{
     line-height: 1.5;
     color: #6a6a6a;
 }
-.card .contenido h3{
+.tarjeta .contenido h3{
     font-weight: 400;
     margin-bottom: 15px;
 }
-.card .contenido a{
+.tarjeta .contenido a{
     text-decoration: none;
     display: inline-block;
     padding: 10px;
@@ -99,7 +99,7 @@ body{
     border-radius: 4px;
     transition: all 400ms ease;
 }
-.card .contenido a:hover{
+.tarjeta .contenido a:hover{
     background: #2fb4cc;
     color: #fff;
 }
