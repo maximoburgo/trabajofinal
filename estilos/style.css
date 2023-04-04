@@ -39,7 +39,9 @@ body {
   min-height: 100vh;
   padding-bottom: 3rem;
 }
-
+.body{
+  min-height: 170vh;
+}
 .contenedor {
   display: flex;
   align-content: space-between;
