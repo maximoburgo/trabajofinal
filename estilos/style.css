@@ -45,6 +45,9 @@ body {
 .body2{
   min-height: 120vh;
 }
+.body3{
+  min-height: 120vh;
+}
 .contenedor {
   display: flex;
   align-content: space-between;
@@ -125,6 +128,7 @@ form{
   width: 50%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 form label,
 form input,
@@ -135,11 +139,30 @@ form button {
 }
 .form-container {
   padding-left: 30px;
-  background-color: aqua;
- 
+  background-color: rgba(2, 3, 15, 0.3);
+  display: flex;
+  width: 50%;
+ justify-content: center;
+  margin-left: 50vh;
+ border-radius: 25px;
+ padding-top: 1rem;
   
 }
-
+form input {
+  height: 6vh;
+  border-radius: 25px;
+}
+form textarea{
+  height: 12vh;
+  border-radius: 25px ;
+}
+.boton1 {
+  display: flex;
+  justify-content: center;
+}
+.boton1 input {
+  width: 15vh;
+}
 .logo {
   width: 80px;
   height: auto;
