@@ -121,6 +121,11 @@ footer a:hover {
 .list-inline-item {
   margin-right: 15px;
 }
+form{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
 form label,
 form input,
 form textarea,
@@ -129,7 +134,10 @@ form button {
   margin-bottom: 10px;
 }
 .form-container {
-  margin-left: 20px;
+  padding-left: 30px;
+  background-color: aqua;
+ 
+  
 }
 
 .logo {
