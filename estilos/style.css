@@ -42,6 +42,9 @@ body {
 .body{
   min-height: 170vh;
 }
+.body2{
+  min-height: 120vh;
+}
 .contenedor {
   display: flex;
   align-content: space-between;
