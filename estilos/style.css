@@ -34,9 +34,10 @@ body {
   font-size: 16px;
   color: #333;
   background-color: #5684c9;
-  margin-left: 30;
   padding: 0;
-  min-height: 90vh;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 3rem;
 }
 
 .contenedor {
@@ -99,6 +100,9 @@ footer {
   padding: 20px 0;
   color: #6c757d;
   font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 footer a {
@@ -132,4 +136,9 @@ form button {
   .contenedor {
     display: block;
   }
+}
+body {
+  background-image: url(https://www.webfreelance.es/img/adicionales/presupuestos.jpg);
+  background-size: 100%;
+
 }
