@@ -28,6 +28,9 @@ nav a {
 nav a:hover {
   color: black;
 }
+.hamburguesa{
+  display: none;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -174,10 +177,26 @@ form textarea{
   height: auto;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 361px) {
   .contenedor {
-    display: block;
+    display: flex;
   }
+  nav a {
+    display: none;
+  }
+  .hamburguesa{
+    display: block;
+    font-size: 40px;
+  }
+}
+
+@media (min-width:769px){
+nav a{
+  display: flex;
+}
+.hamburguesa{
+  display: none;
+}
 }
 body {
   background-image: url(https://www.webfreelance.es/img/adicionales/presupuestos.jpg);
