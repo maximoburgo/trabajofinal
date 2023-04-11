@@ -11,7 +11,6 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: #333;
-  margin: 2px;
   padding: 20px 50px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.571);
   width: 100%;
@@ -30,15 +29,19 @@ nav a {
 nav a:hover {
   color: black;
 }
+.hamburguesa {
+  display: none;
+}
 
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   color: #333;
-  background-color: #5684c9;
-  margin-left: 30;
+  background-color: #d1d5dc;
   padding: 0;
-  min-height: 90vh;
+  position: relative;
+  min-height: 95vh;
+  padding-bottom: 3rem;
 }
 
 .contenedor {
@@ -104,9 +107,11 @@ body {
 
 footer {
   background-color: #f8f9fa;
-  padding: 20px 0;
   color: #6c757d;
   font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 footer a {
@@ -120,7 +125,12 @@ footer a:hover {
 .list-inline-item {
   margin-right: 15px;
 }
-
+form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 form label,
 form input,
 form textarea,
@@ -128,25 +138,54 @@ form button {
   display: block;
   margin-bottom: 10px;
 }
-
-#formulario {
+.form-container {
+  padding-left: 30px;
+  background-color: rgba(2, 3, 15, 0.3);
   display: flex;
-  align-items: center;
+  width: 50%;
   justify-content: center;
-  flex-direction: column;
-  margin-top: 200px;
-  margin-left: 20px;
-  width: 100%;
+  margin-left: 50vh;
+  border-radius: 25px;
+  padding-top: 1rem;
 }
-
-
+form input {
+  height: 6vh;
+  border-radius: 25px;
+}
+form textarea {
+  height: 12vh;
+  border-radius: 25px;
+}
+.boton1 {
+  display: flex;
+  justify-content: center;
+}
+.boton1 input {
+  width: 15vh;
+}
 .logo {
   width: 80px;
   height: auto;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 361px) {
   .contenedor {
+    display: flex;
+  }
+  nav a {
+    display: none;
+  }
+  .hamburguesa {
     display: block;
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 769px) {
+  nav a {
+    display: flex;
+  }
+  .hamburguesa {
+    display: none;
   }
 }
