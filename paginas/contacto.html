@@ -27,32 +27,40 @@
         <a href="#" class="hamburguesa"><i class="bi bi-list"></i></a>
       </nav>
     </header>
-    <h1>Contacto</h1>
-    <div class="form-container">
-      <form action="enviar.php" method="post">
-        <label for="nombre">Nombre:</label>
-        <input class="texto1" type="text" id="nombre" name="nombre" required />
-        <br />
-        <label for="correo">Correo electrónico:</label>
-        <input class="texto1" type="email" id="correo" name="correo" required />
-        <br />
-        <label for="telefono">Teléfono:</label>
-        <input
-          class="texto1"
-          type="tel"
-          id="telefono"
-          name="telefono"
-          required
-        />
-        <br />
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required></textarea>
-        <br />
-        <div class="boton1">
-          <input type="submit" value="Enviar" />
+    <main>
+      <div class="card-presentacion">
+        <section>
+        <h1>Contacto</h1>
+        <p>No dudes en enviarnos tus sugerencias, posibles mejoras o simplemente tus dudas y comentarios. Te responderemos a la brevedad posible.         
+        </p>
+      </section>
+      </div>
+        <div class="form-container">
+          <form action="enviar.php" method="post" class="row mt-3">
+            <label for="nombre">Nombre:</label>
+            <input class="texto1" type="text" id="nombre" name="nombre" required />
+            <br />
+            <label for="correo">Correo electrónico:</label>
+            <input class="texto1" type="email" id="correo" name="correo" required />
+            <br />
+            <label for="telefono">Teléfono:</label>
+            <input
+              class="texto1"
+              type="tel"
+              id="telefono"
+              name="telefono"
+              required
+            />
+            <br />
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <br />
+            <div class="boton1">
+              <input type="submit" value="Enviar" />
+            </div>
+          </form>
         </div>
-      </form>
-    </div>
+    </main>
     <footer>
       <div class="row">
         <div class="col-md-6">
