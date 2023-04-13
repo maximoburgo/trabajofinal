@@ -140,6 +140,11 @@ form button {
   display: block;
   margin-bottom: 10px;
 }
+
+.container{
+  display: flex;
+  justify-content: center;
+}
 .form-container {
   padding-left: 30px;
   background-color: rgba(2, 3, 15, 0.164);
