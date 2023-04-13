@@ -33,35 +33,19 @@
           <div class="row">
             <div class="col-6">
               <label for="horas" class="form-label">Horas Trabajadas</label>
-              <input
-              type="number"
-              class="form-control"
-              id="horas"
-            />
+              <input type="number" class="form-control" id="horas" />
             </div>
             <div class="col-6">
               <label for="tarifa" class="form-label">Tarifa por Hora</label>
-              <input
-                type="number"
-                class="form-control"
-                id="tarifa"
-              />
+              <input type="number" class="form-control" id="tarifa" />
             </div>
             <div class="col-6">
               <label for="gastos" class="form-label">Gastos</label>
-              <input
-                type="number"
-                class="form-control"
-                id="gastos"
-              />
+              <input type="number" class="form-control" id="gastos" />
             </div>
             <div class="col-6">
               <label for="impuestos" class="form-label">Impuestos</label>
-              <input
-                type="text"
-                class="form-control"
-                id="impuestos"
-              />
+              <input type="text" class="form-control" id="impuestos" />
             </div>
             <div class="col-6">
               <label for="Total" class="form-label">Total</label>
@@ -73,9 +57,15 @@
                 readonly
               />
             </div>
-              
+
             <div class="col-12 mx-auto">
-              <button type="submit" class="btn btn-primary" onclick="calcularPresupuesto()">Calcular Presupuesto</button>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                onclick="calcularPresupuesto()"
+              >
+                Calcular Presupuesto
+              </button>
             </div>
           </div>
         </form>
