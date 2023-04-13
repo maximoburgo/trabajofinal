@@ -50,6 +50,15 @@ body {
   padding: 0 20px;
   gap: 20px;
 }
+.invalid{
+  border: solid 1px red;
+  box-shadow: 0 0 10px red;
+
+}
+.error{
+  color: #007bff;
+  font-size: .75rem;
+}
 
 .tarjeta {
   width: 350px;
@@ -139,12 +148,6 @@ form textarea,
 form button {
   display: block;
   margin-bottom: 10px;
-}
-
-.container{
-  display: flex;
-  justify-content: center;
-  justify-items: center;
 }
 .form-container {
   padding-left: 30px;
