@@ -7,4 +7,5 @@ function calcularPresupuesto() {
     var total = horas * tarifa + parseFloat(gastos) + parseFloat(impuestos);
 
     document.getElementById("total").value = total.toFixed(2);
+    event.preventDefault();
 }
