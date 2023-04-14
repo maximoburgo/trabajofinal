@@ -51,18 +51,25 @@ body {
   gap: 20px;
 }
 
-.container{
+.container {
   display: flex;
   justify-content: center;
 }
-.invalid{
+.container_imag {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  margin-left: 10vh;
+  padding-top: 1rem;
+}
+.invalid {
   border: solid 1px red;
   box-shadow: 0 0 10px red;
-
 }
-.error{
+.error {
   color: #007bff;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 .tarjeta {
@@ -119,7 +126,6 @@ body {
   padding: 0 20px;
   margin-top: 10px;
 }
-
 
 footer {
   background-color: #f8f9fa;
