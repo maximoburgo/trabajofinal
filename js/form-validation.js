@@ -13,7 +13,7 @@ const validateEmptyField = (e)=> {
         if (fieldValue.length === 0){
             field.classList.add("invalid");
             field.nextElementSibling.classList.add("error");
-            field.nextElementSibling.innerText = `${field.id} es requerido`;
+            field.nextElementSibling.innerText = `Debe ingresar ${field.id}`;
         }else{
             field.classList.remove("invalid");
             field.nextElementSibling.classList.remove("error");

@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../estilos/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <title>Presupuestos en programacion</title>
   </head>
   <body>
@@ -22,10 +28,13 @@
     <main>
       <h2>¿Cuánto deberías pagar o cobrar por un sitio web?</h2>
       <div class="container">
+        <div class="container_imag">
+          <img src="../imagenes/computacion2.jpg" />
+        </div>
         <form class="row mt-3">
           <div class="row">
             <div class="col-6">
-              <label for="horas" class="form-label">cantidad de Horas Trabajadas</label>
+              <label for="horas" class="form-label">Cantidad de Horas Trabajadas</label>
               <input type="number" class="form-control" id="horas" />
             </div>
             <div class="col-6">
@@ -41,7 +50,7 @@
               <input type="text" class="form-control" id="impuestos" />
             </div>
             <div class="col-6">
-              <label for="descripcion" class="form-label">descipción del proyecto</label>
+              <label for="descripcion" class="form-label">Descipción del proyecto</label>
               <input type="text" class="form-control" id="descripcion" />
             </div>
             <div class="col-6">
@@ -87,7 +96,7 @@
           </ul>
         </div>
       </div>
-      <script src="../js/form-validation.js"></script>
+      <script src="../js/script.js"></script>
     </footer>
   </body>
 </html>
