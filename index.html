@@ -1,113 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilos/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Calculo de Presupuestos</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./estilos/style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-  <title>Calculo de Presupuestos</title>
-</head>
-
-<body>
-  <header>
-    <a>
-      <img src="./imagenes/logo.png" class="logo" alt="logo" />
-    </a>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="paginas/Personal.html">Quienes Somos</a>
-      <a href="paginas/contacto.html">Contacto</a>
-      <a href="#" class="hamburguesa"><i class="bi bi-list"></i></a>
-    </nav>
-  </header>
-  <main>
-    <div class="card-presentacion">
-    <section id="presentacion">
-      <h1>Bienvenido a nuestro sitio de presupuestos</h1>
-      <p>Ofrecemos servicios de presupuestos para una variedad de trabajos, incluyendo:</p>
-      <ul>
-        <li>Programación</li>
-        <li>Contabilidad</li>
-        <li>Administración</li>
-      </ul>
-      <p>Si necesita un presupuesto para un trabajo específico, no dude en
-        ponerse en contacto con nosotros utilizando el formulario de contacto a
-        continuación.
-      </p>
-    </section>
-  </div>
-    <div class="contenedor">
-      <div class="tarjeta">
-        <figure>
-          <img src="./imagenes/contabilidad.jpg" />
-        </figure>
-        <div class="contenido">
-          <h3>Contabilidad</h3>
-          <p>
-            La dinámica empresarial requiere de una revisión permanente del valor
-            de los activos fijos, de modo tal que la información contable
-            y de gestión sea integral y fidedigna para una correcta 
-            toma de decisiones.
-          </p>
-          <a href="./paginas/Contabilidad.html">Calcular</a>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <figure>
-          <img src="./imagenes/computacion.jpg" />
-        </figure>
-        <div class="contenido">
-          <h3>Computacion</h3>
-          <p>
-            Sistema de gestión para que administre su empresa de 
-            una manera rápida, fácil y segura, todo en un solo
-            lugar. Consultoría informática, servicios y
-            soluciones web. 
-          </p>
-          <a href="./paginas/Computacion.html">Calcular</a>
-        </div>
-      </div>
-      <div class="tarjeta">
-        <figure>
-          <img src="./imagenes/administracion.jpg" />
-        </figure>
-        <div class="contenido">
-          <h3>Administracion</h3>
-          <p>
-            Administre sus ingresos y gastos mensuales con esta sencilla 
-            calculadora de presupuesto, para que pueda ver donde va su
-            dinero. Mantengase en el camino financiero correcto con 
-            nuestra ayuda.
-          </p>
-          <a href="./paginas/administracion.html">Calcular</a>
-        </div>
-      </div>
-    </div>
-  </main>
-  <script src="./JS/Java.js"></script>
-  <footer>
-    <div class="row">
-      <div class="col-md-6">
-        <p>&copy; 2023 Todos los derechos reservados</p>
-      </div>
-      <div class="col-md-6">
-        <ul class="list-inline text-right">
-          <li class="list-inline-item">
-            <a href="#"><i class="bi bi-facebook"></i> facebook</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#"><i class="bi bi-twitter"></i> twitter</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#"><i class="bi bi-instagram"></i> instagram</a>
-          </li>
+  <body>
+    <header>
+      <a>
+        <img src="./imagenes/logo.png" class="logo" alt="logo" />
+      </a>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="paginas/Personal.html">Quienes Somos</a>
+        <a href="paginas/contacto.html">Contacto</a>
+        <a href="#" class="hamburguesa"><i class="bi bi-list"></i></a>
+      </nav>
+    </header>
+    <main>
+      <div class="card-presentacion">
+        <h1>Bienvenido a nuestro sitio de presupuestos</h1>
+        <p>
+          Ofrecemos servicios de presupuestos para una variedad de trabajos,
+          incluyendo:
+        </p>
+        <ul>
+          <li>Programación</li>
+          <li>Contabilidad</li>
+          <li>Administración</li>
         </ul>
+        <p>
+          Si necesita un presupuesto para un trabajo específico, no dude en
+          ponerse en contacto con nosotros utilizando el formulario de contacto
+          a continuación.
+        </p>
       </div>
-    </div>
-  </footer>
-</body>
-
+      <div class="contenedor">
+        <div class="tarjeta">
+          <figure>
+            <img src="./imagenes/contabilidad.jpg" />
+          </figure>
+          <div class="contenido">
+            <h3>Contabilidad</h3>
+            <p>
+              La dinámica empresarial requiere de una revisión permanente del
+              valor de los activos fijos, de modo tal que la información
+              contable y de gestión sea integral y fidedigna para una correcta
+              toma de decisiones.
+            </p>
+            <a href="./paginas/Contabilidad.html">Calcular</a>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <figure>
+            <img src="./imagenes/computacion.jpg" />
+          </figure>
+          <div class="contenido">
+            <h3>Computacion</h3>
+            <p>
+              Sistema de gestión para que administre su empresa de una manera
+              rápida, fácil y segura, todo en un solo lugar. Consultoría
+              informática, servicios y soluciones web.
+            </p>
+            <a href="./paginas/Computacion.html">Calcular</a>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <figure>
+            <img src="./imagenes/administracion.jpg" />
+          </figure>
+          <div class="contenido">
+            <h3>Administracion</h3>
+            <p>
+              Administre sus ingresos y gastos mensuales con esta sencilla
+              calculadora de presupuesto, para que pueda ver donde va su dinero.
+              Mantengase en el camino financiero correcto con nuestra ayuda.
+            </p>
+            <a href="./paginas/administracion.html">Calcular</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="redes-sociales">
+        <a href="#"><i class="bi bi-facebook"></i> facebook</a>
+        <a href="#"><i class="bi bi-twitter"></i> twitter</a>
+        <a href="#"><i class="fa-brands fa-instagram"></i>instagram</a>
+      </div>
+    </footer>
+  </body>
 </html>
