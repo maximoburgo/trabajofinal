@@ -22,18 +22,50 @@
     <main>
       <h2>¿Cuánto deberías pagar o cobrar por un sitio web?</h2>
       <div class="container">
-        <div class="card">
-          <div class="contenido">
-            <h3>Por hora</h3>
-            <p>Ingresa el costo por hora</p>
+        <form class="row mt-3">
+          <div class="row">
+            <div class="col-6">
+              <label for="horas" class="form-label">cantidad de Horas Trabajadas</label>
+              <input type="number" class="form-control" id="horas" />
+            </div>
+            <div class="col-6">
+              <label for="tarifa" class="form-label">Tarifa por Hora</label>
+              <input type="number" class="form-control" id="tarifa" />
+            </div>
+            <div class="col-6">
+              <label for="gastos" class="form-label">Gastos fijos</label>
+              <input type="number" class="form-control" id="gastos" />
+            </div>
+            <div class="col-6">
+              <label for="impuestos" class="form-label">Impuestos</label>
+              <input type="text" class="form-control" id="impuestos" />
+            </div>
+            <div class="col-6">
+              <label for="descripcion" class="form-label">descipción del proyecto</label>
+              <input type="text" class="form-control" id="descripcion" />
+            </div>
+            <div class="col-6">
+              <label for="Total" class="form-label">Precio anticipo</label>
+              <input
+                type="number"
+                class="form-control"
+                id="total"
+                name="total"
+                readonly
+              />
+            </div>
+
+            <div class="col-12 mx-auto">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                onclick="calcularPresupuesto()"
+              >
+                Calcular Presupuesto
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="contenido">
-            <h3>Por día</h3>
-            <p>Ingresa cuantas horas por día</p>
-          </div>
-        </div>
+        </form>
       </div>
     </main>
     <footer>
